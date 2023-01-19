@@ -1,0 +1,40 @@
+{
+  "rules": {
+    "indent": [
+        "error",
+        2
+    ],
+    "quotes": [
+        "error",
+        "single"
+    ],
+    "semi": [
+        "error",
+        "always"
+    ],
+    "comma-dangle": [
+        "error",
+        "never"
+    ],
+    "max-len": [
+        "error",
+        {
+            "code": 90
+        }
+    ]
+},
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  "extends": [
+    "airbnb-base"
+  ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": ["javascript"]
+}
