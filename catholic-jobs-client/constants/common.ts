@@ -1,0 +1,7 @@
+export const Color = {
+  DEFAULT_LIGHT_COLOR: "#FFFFFF",
+  DEFAULT_DARK_COLOR: "black",
+  DEFAULT_PRIMARY_COLOR: "#6924fc",
+  DEFAULT_SECOND_COLOR: "#f0e9ff",
+  DEFAULT_BLUE_COLOR: "#BBDAFD",
+};

@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  user-select: none;
+  width: fit-content;
+}
+
+.logoTitleClass {
+  font-family: "Utm Avo Bold";
+  color: BLACK;
+}
+
+.quoteClass {
+  font-family: "Utm Avo";
+  color: black;
+  font-size: 7px;
+}

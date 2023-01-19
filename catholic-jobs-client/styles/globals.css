@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: auto;
+
+  --primaryColor: #6924fc;
+  --secondColor: #f0e9ff;
+  z-index: 1;
+}
+@font-face {
+  font-family: "UTM avo";
+  src: url("../public/assets/fonts/UtmAvo.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "UTM avo bold";
+  src: url("../public/assets/fonts/UTMAvoBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primaryColor);
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
