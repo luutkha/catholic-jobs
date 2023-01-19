@@ -1,8 +1,5 @@
 import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { useEffect } from 'react';
-import MasterLayout from '../components/commons/templates/master-layout/MasterLayout';
-import Footer from '../components/footer/Footer';
-import Header from '../components/header/Header';
 import { useAppDispatch } from '../redux/hooks';
 import { setBgColor } from '../redux/slices/bg-color.slice';
 
@@ -26,7 +23,7 @@ const Home: NextPage = ({ listImages }: InferGetStaticPropsType<typeof getStatic
 
   }, [])
   return (
-      <div> Tesst layout</div>
+    <div> Tesst layout</div>
   )
 }
 

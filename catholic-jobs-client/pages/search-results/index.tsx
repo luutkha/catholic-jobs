@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import Input from '../../components/commons/atoms/input/Input'
 
 type Props = {}
 
@@ -8,8 +9,8 @@ const Index = (props: Props) => {
   console.log(router.query)
   return (
     <div className='flex flex-col bg-gray-100 w-full flex-1'>
-      <div className='bg-gray-200 h-20'>
-        Searh Box
+      <div className='flex items-center justify-center bg-gray-200 h-20 p-5'>
+        <Input placeholder='search anythings you wants' />
       </div>
       <div className='flex flex-1 gap-3 p-5 max-h-screen bg-red-50'>
         <div className='flex-1 max-h-full overflow-auto'>
