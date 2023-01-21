@@ -34,7 +34,6 @@ exports.register = async (req, res, next) => {
     const user = await new User(userData).save();
     const userTransformed = user.transform();
     const token = generateTokenResponse(user, user.token());
-    console.log(user);
     emailProvider.sendSimpleEmail(user);
     res.status(httpStatus.CREATED);
     return res.json({ token, user: userTransformed });

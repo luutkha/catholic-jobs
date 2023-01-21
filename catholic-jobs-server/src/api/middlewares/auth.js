@@ -17,18 +17,18 @@ const handleJWT = (req, res, next, roles) => async (err, user, info) => {
 
   try {
     if (error || !user) throw error;
-    await logIn(user, { session: false });
+    const a = await logIn(user, { session: false });
   } catch (e) {
     return next(apiError);
   }
 
   if (roles === LOGGED_USER) {
-    if (user.role !== 'admin' && req.params.userId !== user._id.toString()) {
+    if (!user.role.includes('admin') && req.params.userId !== user._id.toString()) {
       apiError.status = httpStatus.FORBIDDEN;
       apiError.message = 'Forbidden';
       return next(apiError);
     }
-  } else if (!roles.includes(user.role)) {
+  } else if (!user.role.includes('user')) {
     apiError.status = httpStatus.FORBIDDEN;
     apiError.message = 'Forbidden';
     return next(apiError);

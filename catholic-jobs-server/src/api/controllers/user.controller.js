@@ -92,7 +92,7 @@ exports.list = async (req, res, next) => {
 };
 
 /**
- * Delete user
+ * Delete user    
  * @public
  */
 exports.remove = (req, res, next) => {
