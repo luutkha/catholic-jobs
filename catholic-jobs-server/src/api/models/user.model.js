@@ -43,9 +43,8 @@ const userSchema = new mongoose.Schema({
     google: String,
   },
   role: {
-    type: String,
-    enum: roles,
-    default: 'user',
+    type: [String],
+    default: ['user'],
   },
   picture: {
     type: String,
