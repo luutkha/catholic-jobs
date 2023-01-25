@@ -62,18 +62,20 @@ const userSchema = new mongoose.Schema({
  */
 userSchema.pre('save', async function save(next) {
   try {
+    console.log('pre save')
     if (!this.isModified('password')) return next();
 
     const rounds = env === 'test' ? 1 : 10;
 
     const hash = await bcrypt.hash(this.password, rounds);
     this.password = hash;
-
+    console.log(this)
     return next();
   } catch (error) {
     return next(error);
   }
 });
+
 
 /**
  * Methods
