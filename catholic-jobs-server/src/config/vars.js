@@ -21,4 +21,11 @@ module.exports = {
     username: process.env.EMAIL_USERNAME,
     password: process.env.EMAIL_PASSWORD,
   },
+  elsConfig: {
+    node: process.env.ELS_NODE,
+    auth: {
+      username: process.env.ELS_USERNAME,
+      password: process.env.ELS_PASSWORD
+    }
+  }
 };
