@@ -14,12 +14,16 @@ async function run() {
     try {
 
         const result = await client.search({
-            index: 'game-of-thrones',
+            index: 'jobs-index',
+            "from": 0, "size": 10,
             query: {
-                match: { quote: 'winter' }
+                // match: { content: 'test01' }
+                match_all: {}
+
             }
         })
         console.log('ELS connected!')
+        console.log(result.hits.hits)
     }
     catch (e) {
         console.log('Elastic search error when try to connect!');
