@@ -21,6 +21,9 @@ const JobDetail = (props: Props) => {
                 </div>
 
             </div>
+            <div className={'bg-red-500 sm:bg-blue-500 h-20 w-full'}>
+                just for test responsive
+            </div>
         </div>
     )
 }

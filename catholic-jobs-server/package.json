@@ -11,7 +11,6 @@
     "yarn": "*"
   },
   "scripts": {
-    "precommit": "yarn lint",
     "prestart": "yarn docs",
     "start": "cross-env NODE_ENV=production pm2 start ./src/index.js",
     "dev": "nodemon ./src/index.js",
@@ -76,6 +75,7 @@
     "express": "^4.15.2",
     "express-validation": "^1.0.2",
     "helmet": "^4.6.0",
+    "http": "^0.0.1-security",
     "http-status": "^1.0.1",
     "joi": "^10.4.1",
     "jwt-simple": "0.5.6",
@@ -90,6 +90,7 @@
     "passport-jwt": "4.0.0",
     "pm2": "^5.1.0",
     "pug": "^3.0.1",
+    "socket.io": "^4.6.1",
     "uuid": "^3.1.0",
     "winston": "^3.1.0"
   },

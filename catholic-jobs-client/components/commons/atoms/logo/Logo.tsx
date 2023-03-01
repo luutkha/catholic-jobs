@@ -5,7 +5,7 @@ import styles from './Logo.module.css'
 const { container, logoTitleClass, quoteClass } = styles
 const Logo = () => {
     return (
-        <div className={classNames(container)}>
+        <div className={classNames(container) + "animate-wave-hand"}>
             <div className={classNames(logoTitleClass)}>KHA<span style={{ color: Color.DEFAULT_PRIMARY_COLOR }}>TL</span></div>
             <div className={classNames(quoteClass)}>Just a normal dev</div>
         </div>
