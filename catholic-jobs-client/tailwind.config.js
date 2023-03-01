@@ -39,7 +39,17 @@ module.exports = {
         '2': 2,
         '3': 3,
         '4': 4,
-      }
+      },
+      keyframes: {
+        wave: {
+          '0%': { transform: 'translate(-50%)' },
+          '50%': { transform: 'translate(0%)' },
+          '100%': { transform: 'translate(100%)' },
+        },
+      },
+      animation: {
+        'wave-hand': 'wave 500ms linear',
+      },
     },
   },
   variants: {
